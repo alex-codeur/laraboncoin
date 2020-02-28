@@ -35,7 +35,12 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <!-- Left Side Of Navbar -->
                     <ul class="navbar-nav mr-auto">
-                        <a class="nav-link" href="{{ route('ad.create') }}">Ajouter une annonce</a>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('ad.create') }}">Ajouter une annonce</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="{{ route('ad.index') }}">voir les offres</a>
+                        </li>
                     </ul>
 
                     <!-- Right Side Of Navbar -->
@@ -78,5 +83,7 @@
             @yield('content')
         </main>
     </div>
+
+    @yield('extra-js')
 </body>
 </html>
